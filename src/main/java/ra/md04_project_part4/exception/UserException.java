@@ -2,8 +2,8 @@ package ra.md04_project_part4.exception;
 
 import org.springframework.http.HttpStatus;
 
-public class UserException extends Exception{
- private HttpStatus httpStatus;
+public class UserException extends Exception {
+    private HttpStatus httpStatus;
 
     public HttpStatus getHttpStatus() {
         return httpStatus;
@@ -14,8 +14,8 @@ public class UserException extends Exception{
     }
 
     public UserException(String message, HttpStatus status) {
-     super(message);
-     this.httpStatus = status;
+        super(message);
+        this.httpStatus = status;
 
- }
+    }
 }
